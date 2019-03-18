@@ -1,0 +1,10 @@
+.Input {
+  padding-bottom: 80px;
+}
+
+@media (min-width: 780px) {
+  .Input {
+    grid-column: input;
+    padding-bottom: 4px;
+  }
+}

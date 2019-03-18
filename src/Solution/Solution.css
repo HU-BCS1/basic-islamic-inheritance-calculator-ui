@@ -1,0 +1,16 @@
+.Solution-header {
+  display: inline-block;
+  font-size: 20px;
+  border-bottom: 1px solid;
+  font-family: 'Oswald', sans-serif;
+  margin: 8px
+}
+
+@media (min-width: 780px) {
+  .Solution {
+    grid-column: solution;
+  }
+  .Solution-header {
+    margin: 20px 0;
+  }
+}
