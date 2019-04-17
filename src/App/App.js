@@ -19,6 +19,14 @@ const useHeirInput = () => {
   const reducer = (state, action) => {
     switch(action.type) {
       case 'change_count':
+        if(action.count > 0) {
+          if(action.heir === 'husband') {
+            return { ...state, wife: 0, [action.heir]: action.count }
+          }
+          if(action.heir === 'wife') {
+            return { ...state, husband: 0, [action.heir]: action.count }
+          }
+        }
         return { ...state, [action.heir]: action.count }
       case 'reset':
         return initialState
