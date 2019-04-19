@@ -11,6 +11,7 @@ import Button from '@material/react-button'
 import useMedia from 'react-use/lib/useMedia'
 import Modal from 'react-modal'
 import './App.css';
+import './Modal.css';
 
 Modal.setAppElement('#root')
 
@@ -40,7 +41,6 @@ const useHeirInput = () => {
 const App = () => {
   const [heirs, dispatch] = useHeirInput()
   const results = useMemo(() => calculate(heirs), [heirs])
-  const isWide = useMedia('(min-width: 780px)')
   const [solutionModalIsOpen, setSolutionModalIsOpen] = useState(false)
 
   return (
@@ -50,15 +50,11 @@ const App = () => {
       </header>
       <main className="App-main">
         <Input heirs={heirs} dispatch={dispatch} />
-        {isWide ? (
-          <Solution results={results} />
-        ) : (
-          <Fab
-            onClick={() => setSolutionModalIsOpen(true)}
-            className="App-calculate-button"
-            textLabel="calculate"
-          />
-        )}
+        <Fab
+          onClick={() => setSolutionModalIsOpen(true)}
+          className="App-calculate-button"
+          textLabel="calculate"
+        />
         <Modal
           isOpen={solutionModalIsOpen}
           className="App-modal"

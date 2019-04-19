@@ -4,7 +4,7 @@
 
 @media (min-width: 780px) {
   .Input {
-    grid-column: input;
+    /* grid-column: input; */
     padding-bottom: 4px;
   }
 }

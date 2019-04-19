@@ -1,0 +1,59 @@
+.App-close-modal-button {
+  width: 100%;
+  background: #018786 !important;
+  margin-top: 24px;
+}
+
+.App-modal {
+  background: #e6e4c7;
+  padding: 32px 16px;
+  min-height: 30vh;
+  margin: 80px 8px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25), 0 1px 3px rgba(0, 0, 0, 0.22);
+}
+
+.App-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1,1,1,0.6);
+  opacity: 0;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  transition: all 0.3s ease;
+  transform: scale(0.1);
+  opacity: 0;
+}
+
+.ReactModal__Content--after-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ReactModal__Content--before-close {
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+@media (min-width: 780px) {
+  .App-modal {
+    margin: 80px;
+  }
+}
