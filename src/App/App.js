@@ -4,39 +4,16 @@ import Solution from '../Solution/Solution'
 import Input from '../Input/Input'
 import { defaultHeirs, calculate } from '@islamic-inheritance-calculator/core'
 
-import '@material/react-fab/dist/fab.css'
 import Fab from '@material/react-fab'
-import '@material/react-button/dist/button.css'
 import Button from '@material/react-button'
-import useMedia from 'react-use/lib/useMedia'
 import Modal from 'react-modal'
+
+import '@material/react-button/dist/button.css'
+import '@material/react-fab/dist/fab.css'
 import './App.css';
 import './Modal.css';
 
 Modal.setAppElement('#root')
-
-const useHeirInput = () => {
-  const initialState = defaultHeirs
-  const reducer = (state, action) => {
-    switch(action.type) {
-      case 'change_count':
-        if(action.count > 0) {
-          if(action.heir === 'husband') {
-            return { ...state, wife: 0, [action.heir]: action.count }
-          }
-          if(action.heir === 'wife') {
-            return { ...state, husband: 0, [action.heir]: action.count }
-          }
-        }
-        return { ...state, [action.heir]: action.count }
-      case 'reset':
-        return initialState
-      default:
-        throw Error('unknown action type')
-    }
-  }
-  return useReducer(reducer, initialState)
-}
 
 const App = () => {
   const [heirs, dispatch] = useHeirInput()
@@ -75,3 +52,25 @@ const App = () => {
 
 export default App;
 
+const useHeirInput = () => {
+  const initialState = defaultHeirs
+  const reducer = (state, action) => {
+    switch(action.type) {
+      case 'change_count':
+        if(action.count > 0) {
+          if(action.heir === 'husband') {
+            return { ...state, wife: 0, [action.heir]: action.count }
+          }
+          if(action.heir === 'wife') {
+            return { ...state, husband: 0, [action.heir]: action.count }
+          }
+        }
+        return { ...state, [action.heir]: action.count }
+      case 'reset':
+        return initialState
+      default:
+        throw Error('unknown action type')
+    }
+  }
+  return useReducer(reducer, initialState)
+}

@@ -1,7 +1,7 @@
 .App-header {
   height: 86px;
   display: flex;
-  place-content: center center;
+  place-content: center;
   padding: 0 24px;
   background: #e6e4c7;
   box-shadow: 0 4px 6px rgba(230, 228, 199, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -26,11 +26,13 @@
 }
 
 @media (min-width: 780px) {
-  .App-header {
-    place-content: center start;
-  }
   .App-main {
-    margin: 12px;
+    margin: 48px 84px;
     margin-bottom: 80px;
+  }
+  .App-calculate-button {
+    right: 16px;
+    left: unset;
+    width: unset;
   }
 }
