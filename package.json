@@ -8,7 +8,6 @@
   "dependencies": {
     "@material/react-button": "^0.11.0",
     "@material/react-fab": "^0.11.0",
-    "islamic-inheritance-calculator": "https://github.com/HU-BCS1/islamic-inheritance-calculator.git",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-modal": "^3.8.1",
