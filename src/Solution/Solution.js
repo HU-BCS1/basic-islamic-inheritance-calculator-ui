@@ -1,6 +1,7 @@
 import React from 'react'
-import './Solution.css'
 import T from '../translation-en.json'
+
+import './Solution.css'
 
 const toPercentage = fr => {
   return fr.mul(100).valueOf()
