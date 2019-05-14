@@ -859,13 +859,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@islamic-inheritance-calculator/core@file:./../core":
-  version "1.0.0"
-  dependencies:
-    "@types/lodash.sumby" "^4.6.6"
-    fraction.js "^4.0.12"
-    lodash.sumby "^4.6.0"
-
 "@material/animation@^0.41.0":
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/animation/-/animation-0.41.0.tgz#315b45b32e1aeebee8a4cf555b8ad52076d09ddd"
@@ -1137,9 +1130,9 @@
     "@types/lodash" "*"
 
 "@types/lodash@*":
-  version "4.14.123"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.123.tgz#39be5d211478c8dd3bdae98ee75bb7efe4abfe4d"
-  integrity sha512-pQvPkc4Nltyx7G1Ww45OjVqUsJP4UsZm+GWJpigXgkikZqJgRm4c48g027o6tdgubWHwFRF15iFd+Y4Pmqv6+Q==
+  version "4.14.126"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.126.tgz#47cff3ea014aa083194f8ca3ec351136c3786613"
+  integrity sha512-HxQ+wQnBtnL0LszZrVdMqWIlzZNyKuMLUb6swQ3mo6ysPqpAu7gfnapCQIi0B+Mrf0fNLZh8AWgJs2njejVasg==
 
 "@types/node@*":
   version "11.10.5"
@@ -5333,6 +5326,14 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
+
+"islamic-inheritance-calculator@https://github.com/HU-BCS1/islamic-inheritance-calculator.git":
+  version "1.0.0"
+  resolved "https://github.com/HU-BCS1/islamic-inheritance-calculator.git#3b54a8dd5a1a77fd64aa5cb68f6304e062c547c0"
+  dependencies:
+    "@types/lodash.sumby" "^4.6.6"
+    fraction.js "^4.0.12"
+    lodash.sumby "^4.6.0"
 
 isobject@^2.0.0:
   version "2.1.0"

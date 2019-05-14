@@ -2,7 +2,7 @@
 import React, { useState, useReducer, useMemo } from 'react';
 import Solution from '../Solution/Solution'
 import Input from '../Input/Input'
-import { defaultHeirs, calculate } from '@islamic-inheritance-calculator/core'
+import { defaultHeirs, calculate } from 'islamic-inheritance-calculator'
 
 import Fab from '@material/react-fab'
 import Button from '@material/react-button'
