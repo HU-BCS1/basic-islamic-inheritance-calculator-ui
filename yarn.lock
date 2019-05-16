@@ -859,6 +859,15 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@hu-bcs1/islamic-inheritance-calculator@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@hu-bcs1/islamic-inheritance-calculator/-/islamic-inheritance-calculator-1.0.0.tgz#5a68f4b93c04cbfd1bb0e9cc103bace6a6c333ba"
+  integrity sha512-aBsR9OnH0waifYeep9Nkf81MTWUTZTfAJOYn2fQWXDeLJcfUZiFrYAWDWY7UM522Iv55Ae1Z4DcZLoEq/KXiyA==
+  dependencies:
+    "@types/lodash.sumby" "^4.6.6"
+    fraction.js "^4.0.12"
+    lodash.sumby "^4.6.0"
+
 "@material/animation@^0.41.0":
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/animation/-/animation-0.41.0.tgz#315b45b32e1aeebee8a4cf555b8ad52076d09ddd"
@@ -1121,6 +1130,18 @@
     "@svgr/plugin-jsx" "^4.1.0"
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
+
+"@types/lodash.sumby@^4.6.6":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash.sumby/-/lodash.sumby-4.6.6.tgz#25f9aba30bc9fd8203e43ebb3a3b6460f5f9b4b4"
+  integrity sha512-C7P2OuGcbCHxQ7dfEHNWfdQUhziwosJ8X6TzDZqIUVWamqFxUZX32JhoWZ/L5Z/lZX3HLTlQs1E5MtG0l9C9cA==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.129"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.129.tgz#9aaca391db126802482655c48dd79a814488202f"
+  integrity sha512-oYaV0eSlnOacOr7i4X1FFdH8ttSlb57gu3I9MuStIv2CYkISEY84dNHYsC3bF6sNH7qYcu1BtVrCtQ8Q4KPTfQ==
 
 "@types/node@*":
   version "11.10.5"
@@ -4173,6 +4194,11 @@ forwarded@~0.1.2:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
   integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
 
+fraction.js@^4.0.12:
+  version "4.0.12"
+  resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.0.12.tgz#0526d47c65a5fb4854df78bc77f7bec708d7b8c3"
+  integrity sha512-8Z1K0VTG4hzYY7kA/1sj4/r1/RWLBD3xwReT/RCrUCbzPszjNQCCsy3ktkU/eaEqX3MYa4pY37a52eiBlPMlhA==
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -6074,6 +6100,11 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
+
+lodash.sumby@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.sumby/-/lodash.sumby-4.6.0.tgz#7d87737ddb216da2f7e5e7cd2dd9c403a7887346"
+  integrity sha1-fYdzfdshbaL35efNLdnEA6eIc0Y=
 
 lodash.tail@^4.1.1:
   version "4.1.1"
