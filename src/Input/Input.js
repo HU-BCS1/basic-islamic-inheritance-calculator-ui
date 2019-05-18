@@ -66,7 +66,7 @@ const InputRows = ({ name, heirs, onCountChange }) => (
     <td>
       <select
         value={heirs[name]}
-        onChange={evt => onCountChange(name, evt.target.value)}
+        onChange={evt => onCountChange(name, parseInt(evt.target.value))}
       >
         {
           maxCount(name) > 1 ? (
