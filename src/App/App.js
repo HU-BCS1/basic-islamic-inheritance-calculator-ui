@@ -20,6 +20,11 @@ const App = () => {
   const results = useMemo(() => calculate(heirs), [heirs])
   const [solutionModalIsOpen, setSolutionModalIsOpen] = useState(false)
 
+  const closeAndReset = () => {
+    dispatch({ type: 'reset' })
+    setSolutionModalIsOpen(false)
+  }
+
   return (
     <>
       <header className="App-header">
@@ -36,12 +41,13 @@ const App = () => {
           isOpen={solutionModalIsOpen}
           className="App-modal"
           overlayClassName="App-overlay"
+          onRequestClose={() => setSolutionModalIsOpen(false)}
         >
           <Solution results={results} />
           <Button
             unelevated
             className="App-close-modal-button"
-            onClick={() => setSolutionModalIsOpen(false)}>
+            onClick={closeAndReset}>
             close
           </Button>
         </Modal>
