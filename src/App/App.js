@@ -8,6 +8,9 @@ import Fab from '@material/react-fab'
 import Button from '@material/react-button'
 import Modal from 'react-modal'
 
+// import T from '../translation-en.json'
+import { useTranslation } from '../translation'
+
 import '@material/react-button/dist/button.css'
 import '@material/react-fab/dist/fab.css'
 import './App.css';
@@ -16,6 +19,7 @@ import './Modal.css';
 Modal.setAppElement('#root')
 
 const App = () => {
+  const t = useTranslation()
   const [heirs, dispatch] = useHeirInput()
   const results = useMemo(() => calculate(heirs), [heirs])
   const [solutionModalIsOpen, setSolutionModalIsOpen] = useState(false)
@@ -28,14 +32,14 @@ const App = () => {
   return (
     <>
       <header className="App-header">
-        <p className="App-name">Islamic Inheritance Calculator</p>
+        <p className="App-name">{t('title')}</p>
       </header>
-      <main className="App-main">
+      <main className="App-main" dir={t('lang') === 'ar' ? 'rtl' : 'ltr'}>
         <Input heirs={heirs} dispatch={dispatch} />
         <Fab
           onClick={() => setSolutionModalIsOpen(true)}
           className="App-calculate-button"
-          textLabel="calculate"
+          textLabel={t('calculate')}
         />
         <Modal
           isOpen={solutionModalIsOpen}
@@ -48,7 +52,7 @@ const App = () => {
             unelevated
             className="App-close-modal-button"
             onClick={closeAndReset}>
-            close
+            {t('close')}
           </Button>
         </Modal>
       </main>

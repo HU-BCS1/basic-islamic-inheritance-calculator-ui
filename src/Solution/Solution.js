@@ -1,5 +1,6 @@
 import React from 'react'
-import T from '../translation-en.json'
+
+import { useTranslation } from '../translation'
 
 import './Solution.css'
 
@@ -8,30 +9,32 @@ const toPercentage = fr => {
 }
 
 const Solution = ({ results }) => { 
+  const t = useTranslation()
+
   return (
-    <div className="Solution">
-      <p className="Solution-header">Solution</p>
+    <div className="Solution" dir={t('lang') === 'ar' ? 'rtl' : 'ltr'}>
+      <p className="Solution-header">{t('solution')}</p>
       <table>
         <thead>
           <tr>
-            <th>Heir type</th>
-            <th>Share Type</th>
-            <th>Share Fraction</th>
-            <th>Share Percentage</th>
+            <th>{t('heir_type')}</th>
+            <th>{t('share_type')}</th>
+            <th>{t('share_fraction')}</th>
+            <th>{t('share_percentage')}</th>
           </tr>
         </thead>
         <tbody>
           {results.map(r => (
             <tr key={`${r.name}-${r.type}`}>
-              <td>{T[r.name]}</td>
-              <td>{r.type}</td>
+              <td>{t(r.name)}</td>
+              <td>{t(r.type)}</td>
               <td>{r.share.toFraction()}</td>
               <td>{toPercentage(r.share).toFixed(2)}%</td>
             </tr>
           ))}
         </tbody>
       </table>
-      {!results.length && <p>No heir is selected</p>}
+      {!results.length && <p>{t('no_heir_selected')}</p>}
     </div>
   )
  }

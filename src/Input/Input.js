@@ -1,10 +1,13 @@
 import React from 'react'
 import Card from '../Card/Card'
 import useMedia from 'react-use/lib/useMedia'
+
+import { useTranslation } from '../translation'
+
 import './Input.css'
-import T from '../translation-en.json'
 
 const Input = ({ heirs, dispatch }) => { 
+  const t = useTranslation()
   const isWide = useMedia('(min-width: 780px)')
   const handleCountChange = (heir, count) => {
     dispatch({ type: 'change_count', heir, count })
@@ -21,10 +24,10 @@ const Input = ({ heirs, dispatch }) => {
         <table>
           <thead>
             <tr>
-              <th>Heir type</th>
-              <th>No. of heirs</th>
-              <th>Heir type</th>
-              <th>No. of heirs</th>
+              <th>{t('heir_type')}</th>
+              <th>{t('heir_count')}</th>
+              <th>{t('heir_type')}</th>
+              <th>{t('heir_count')}</th>
             </tr>
           </thead>
           <tbody>
@@ -40,8 +43,8 @@ const Input = ({ heirs, dispatch }) => {
         <table>
           <thead>
             <tr>
-              <th>Heir type</th>
-              <th>No. of heirs</th>
+              <th>{t('heir_type')}</th>
+              <th>{t('heir_count')}</th>
             </tr>
           </thead>
           <tbody>
@@ -60,28 +63,32 @@ const Input = ({ heirs, dispatch }) => {
 
 export default Input
 
-const InputRows = ({ name, heirs, onCountChange }) => ( 
-  <>
-    <td>{T[name]}</td>
-    <td>
-      <select
-        value={heirs[name]}
-        onChange={evt => onCountChange(name, parseInt(evt.target.value))}
-      >
-        {
-          maxCount(name) > 1 ? (
-            range(maxCount(name) + 1).map((count, i) => <option key={i}>{count}</option>)
-          ) : (
-              <>
-                <option value="0">No</option>
-                <option value="1">Yes</option>
-              </>
-            )
-        }
-      </select>
-    </td>
-  </>
-)
+const InputRows = ({ name, heirs, onCountChange }) => { 
+  const t = useTranslation()
+
+  return ( 
+    <>
+      <td>{t(name)}</td>
+      <td>
+        <select
+          value={heirs[name]}
+          onChange={evt => onCountChange(name, parseInt(evt.target.value))}
+        >
+          {
+            maxCount(name) > 1 ? (
+              range(maxCount(name) + 1).map((count, i) => <option key={i}>{count}</option>)
+            ) : (
+                <>
+                  <option value="0">{t('no')}</option>
+                  <option value="1">{t('yes')}</option>
+                </>
+              )
+          }
+        </select>
+      </td>
+    </>
+  )
+}
 
 const range = end => [...Array(end).keys()]
 

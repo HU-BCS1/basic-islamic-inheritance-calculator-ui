@@ -1,4 +1,21 @@
 {
+  "lang": "en",
+  "title": "Islamic Inheritance Calculator",
+  "yes": "Yes",
+  "no": "No",
+  "calculate": "calculate",
+  "close": "close",
+  "heir_type": "Heir type",
+  "heir_count": "No. of heirs",
+  "fard": "Fard",
+  "tasib": "Tasib",
+  "special_case": "Special Case",
+  "solution": "Solution",
+  "no_heir_selected": "No heir is selected",
+  "share_fraction": "Share Fraction",
+  "share_percentage": "Share Percentage",
+  "share_type": "Share Type",
+
   "husband": "Husband",
   "wife": "Wife",
   "son": "Son",
@@ -17,14 +34,8 @@
   "maternal_sibling": "Maternal Sibling",
   "full_nephew": "Full Nephew",
   "paternal_nephew": "Paternal Nephew",
-  "full_nephew_s_son": "Full Nephew's Son",
-  "paternal_nephew_s_son": "Paternal Nephew's Son",
   "full_paternal_uncle": "Full Paternal Uncle",
   "paternal_paternal_uncle": "Paternal Paternal Uncle",
   "full_cousin": "Full Cousin",
-  "paternal_cousin": "Paternal Cousin",
-  "full_cousin_s_son": "Full Cousin's Son",
-  "paternal_cousin_s_son": "Paternal Cousin's Son",
-  "full_cousin_s_grandson": "Full Cousin's GrandSon",
-  "paternal_cousin_s_grandson": "Paternal Cousin's GrandSon"
+  "paternal_cousin": "Paternal Cousin"
 }
