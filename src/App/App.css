@@ -32,8 +32,15 @@
     margin-bottom: 80px;
   }
   .App-calculate-button {
-    right: 16px;
     left: unset;
+    right: unset;
     width: unset;
+    inset-inline-end: 16px;
+  }
+
+  @supports not (inset-inline-end: 16px) {
+    .App-calculate-button {
+      right: 16px;
+    }
   }
 }
