@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway|Reem+Kufi|Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Cairo';
+  font-family: 'Cairo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: lightyellow;
@@ -18,10 +17,6 @@ code {
 table {
   border-collapse: collapse;
   width: 100%;
-}
-
-th {
-  font-family: 'Oswald', sans-serif;
 }
 
 th, td {
@@ -40,9 +35,10 @@ tr:last-of-type td, tr:last-of-type {
 }
 
 select {
+  font-family: 'Cairo', sans-serif;
   min-width: 100px;
   width: 100%;
-  padding: 8px;
+  padding: 4px;
   border: none;
   background: #fff;
 }
