@@ -6,7 +6,7 @@
     "pnp": false
   },
   "dependencies": {
-    "@hu-bcs1/islamic-inheritance-calculator": "^1.1.0",
+    "@hu-bcs1/islamic-inheritance-calculator": "^1.2.0",
     "@material/react-button": "^0.11.0",
     "@material/react-fab": "^0.11.0",
     "react": "^16.8.4",

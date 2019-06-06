@@ -859,10 +859,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@hu-bcs1/islamic-inheritance-calculator@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@hu-bcs1/islamic-inheritance-calculator/-/islamic-inheritance-calculator-1.1.0.tgz#cbcdbeb97f5a33e855770779fbf3a2f2286d328a"
-  integrity sha512-AJqtDRvN7OZ36CK4kHUuwlvUPpK5M0EblCkMyiiTuxNI52/Xd0DNHCriSsqKba0UnSgbFBKcuJSdXEI9afcFcA==
+"@hu-bcs1/islamic-inheritance-calculator@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@hu-bcs1/islamic-inheritance-calculator/-/islamic-inheritance-calculator-1.2.0.tgz#5c1e33bb190ba271e3938b89e3f7f0148606a404"
+  integrity sha512-JQsEPF1ap107Rt/GJHTQOU/UjgWAvZ1qGIBRo209zThXcRvxm4kUbMwxInKNzxxGXJKFBTd35QX5RrLApomlHw==
   dependencies:
     "@types/lodash.sumby" "^4.6.6"
     fraction.js "^4.0.12"
