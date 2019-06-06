@@ -8,7 +8,7 @@ import { TranslationProvider } from './translation'
 
 //TODO: read lang from url params
 ReactDOM.render(
-  <TranslationProvider lang='en'>
+  <TranslationProvider lang='ar'>
     <App />
   </TranslationProvider>,
   document.getElementById('root')
