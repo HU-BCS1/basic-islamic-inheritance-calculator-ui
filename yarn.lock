@@ -859,10 +859,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@hu-bcs1/islamic-inheritance-calculator@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@hu-bcs1/islamic-inheritance-calculator/-/islamic-inheritance-calculator-1.4.0.tgz#f878045dd8dd1dd998dacf7dddff5ba502f58f21"
-  integrity sha512-O6V82dTrh9lcfUzCwbgt9MJKmXyDQ6O0LvmkSmKpcBod/UGcgAke+c4EqMBVM4BV1XNY796u84/AMP511tAptQ==
+"@hu-bcs1/islamic-inheritance-calculator@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@hu-bcs1/islamic-inheritance-calculator/-/islamic-inheritance-calculator-1.4.1.tgz#86e0ffa88255881291428707e98138ca3710f710"
+  integrity sha512-f2IpSBI9+dSmt2PYu74AfrjiaD8PnoNCacS8Hu3JtanCvTn2AITlIcSW7iMliCA6jPD0S+XaMudFLH1J+aTtQg==
   dependencies:
     "@types/lodash" "^4.14.134"
     fraction.js "^4.0.12"
@@ -6426,9 +6426,9 @@ mississippi@^3.0.0:
     through2 "^2.0.0"
 
 mixin-deep@^1.2.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
-  integrity sha512-8ZItLHeEgaqEvd5lYBXfm4EZSFCX29Jb9K+lAHhDKzReKBQKj3R+7NOF6tjqYi9t4oI8VUfaWITJQm86wnXGNQ==
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
+  integrity sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA==
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
