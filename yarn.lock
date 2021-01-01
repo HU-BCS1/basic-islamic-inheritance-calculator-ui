@@ -859,14 +859,14 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@hu-bcs1/islamic-inheritance-calculator@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@hu-bcs1/islamic-inheritance-calculator/-/islamic-inheritance-calculator-1.4.1.tgz#86e0ffa88255881291428707e98138ca3710f710"
-  integrity sha512-f2IpSBI9+dSmt2PYu74AfrjiaD8PnoNCacS8Hu3JtanCvTn2AITlIcSW7iMliCA6jPD0S+XaMudFLH1J+aTtQg==
+"@hu-bcs1/islamic-inheritance-calculator@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@hu-bcs1/islamic-inheritance-calculator/-/islamic-inheritance-calculator-1.4.2.tgz#8455ade7c3809dc0da0764abdeaa1edd6e0e0e53"
+  integrity sha512-Wc5VFP6vvEp9s6swpP78XeBIh+nJw9a7GRhnaEkoGFBV06lZiXp0IXhgmXL2D1msQ7dXWih6KwdWfy0jj3g2Fw==
   dependencies:
-    "@types/lodash" "^4.14.134"
+    "@types/lodash" "^4.14.158"
     fraction.js "^4.0.12"
-    lodash "^4.17.11"
+    lodash "^4.17.19"
 
 "@material/animation@^0.41.0":
   version "0.41.0"
@@ -1131,10 +1131,10 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
-"@types/lodash@^4.14.134":
-  version "4.14.134"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.134.tgz#9032b440122db3a2a56200e91191996161dde5b9"
-  integrity sha512-2/O0khFUCFeDlbi7sZ7ZFRCcT812fAeOLm7Ev4KbwASkZ575TDrDcY7YyaoHdTOzKcNbfiwLYZqPmoC4wadrsw==
+"@types/lodash@^4.14.158":
+  version "4.14.167"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.167.tgz#ce7d78553e3c886d4ea643c37ec7edc20f16765e"
+  integrity sha512-w7tQPjARrvdeBkX/Rwg95S592JwxqOjmms3zWQ0XZgSyxSLdzWaYH3vErBhdVS/lRBX7F8aBYcYJYTr5TMGOzw==
 
 "@types/node@*":
   version "11.10.5"
@@ -6130,6 +6130,11 @@ lodash.uniq@^4.5.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+
+lodash@^4.17.19:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 loglevel@^1.4.1:
   version "1.6.1"
